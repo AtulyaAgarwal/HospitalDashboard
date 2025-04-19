@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+/* Machines Dashboard Container */
+.machines-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.machine-breadcrumbs{
+    font-family: "Noto Sans", sans-serif;
+    text-align: left !important;
+    width: 65vw;
+    height: 1vw;
+    left: 10vw;
+    top: 10.5vw ;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    align-content: baseline;
+    color: #000000;
+}
+
+
+/* Section Title */
+.machine-section h3 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    width: 10vw;
+    height: 1vw;
+    left: 10vw;
+    top: 10.5vw ;
+    margin-bottom: 10px;
+    color: #333;
+    
+    margin-left: 1vw; /* Adjust this value as needed */
+}
+
+.machine-section h4 {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  width: 10vw;
+  height: 1vw;
+  left: 10vw;
+  top: 10.5vw ;
+  margin-bottom: 10px;
+  color: #333;
+  
+  margin-left: 1vw; /* Adjust this value as needed */
+}
+
+
+
+.Patient-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+
+/* Add Button */
+.add-machine-btn {
+  font-family: "Noto Sans", sans-serif;
+  width: auto;
+  height: 48px;
+  padding: 12px 16px;
+  background-color: #6D1DF0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-machine-btn:hover {
+    background-color: #5611C9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Machine Type Buttons Container */
+.machine-type-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 12px; /* Add space between the buttons */
+    margin: 20px 0; /* Add spacing above and below the button container */
+}
+
+/* Individual Button Styles */
+.button {
+    font-family: "Noto Sans", sans-serif;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Active State for Selected Machine Type */
+.button.active {
+    background-color: #6D1DF0;
+    color: #fff;
+    border-color: #6D1DF0;
+}
+.machine-section{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Table Section */
+.react-table {
+    
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    border: 1px solid rgba(224, 224, 224, 0.6);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    width: 100%;
+    max-width: 98% !important;
+}
+
+.react-table th,
+.react-table td {
+  text-align: left;
+  padding: 10px; /* Optional: Adds spacing inside cells */
+}
+
+.react-table th {
+  text-align: left !important;
+}
+
+.react-table th:first-child,
+.react-table td:first-child {
+  padding-left: 20px !important; /* Adjust this value as needed */
+}
+/* Success Popup */
+.success-popup {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  

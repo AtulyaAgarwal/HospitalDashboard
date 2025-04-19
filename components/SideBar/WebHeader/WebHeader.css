@@ -1,0 +1,50 @@
+.web-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background: red; */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 23, 61, 0.16);
+    /* border-radius: 24px 24px 0px 0px; */
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    min-height: 100px;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-inline: 8%;
+}
+
+.header-text {
+    display: flex;
+    flex-grow: 2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.header-heading-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: -0;
+}
+
+.header-heading {
+    font-size: 28px;
+}
+
+.header-sub-heading {
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+}

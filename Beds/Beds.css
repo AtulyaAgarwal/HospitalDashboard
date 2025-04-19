@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+/* Beds Title */
+.bed-title {
+    font-family: "Noto Sans", sans-serif;
+   
+    text-align: left !important;
+    width: 65vw;
+    height: 1vw;
+    left: 10vw;
+    top: 10.5vw ;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.02em;
+    
+}
+
+/* Filters and Actions Container */
+.filters-and-actions {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    margin: 20px 0;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group select:hover,
+.input-group select:focus {
+    border-color: #6D1DF0;
+    box-shadow: 0px 0px 6px rgba(109, 29, 240, 0.3);
+}
+
+/* Add Bed Button */
+.add-bed-btn {
+    font-family: "Noto Sans", sans-serif;
+    width: auto;
+    height: 48px;
+    padding: 12px 16px;
+    background-color: #6D1DF0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-bed-btn:hover {
+    background-color: #5611C9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Section */
+.react-table {
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 20px;
+    border: 1px solid rgba(224, 224, 224, 0.6);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    width: 100%;
+    max-width: 98% !important;
+}
+ 
+.react-table th,
+.react-table td {
+  text-align: left;
+  padding: 10px; /* Optional: Adds spacing inside cells */
+}
+
+.react-table th {
+  text-align: left !important;
+}
+
+.react-table th:first-child,
+.react-table td:first-child {
+  padding-left: 20px !important; /* Adjust this value as needed */
+}
+/* Modal Styles */
+.modal {
+    font-family: "Noto Sans", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 999;
+}
+
+.modal-content {
+    font-family: "Noto Sans", sans-serif;
+    position: relative;
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Input/Select Field Styles */
+.input-group {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Success Popup */
+.success-popup {
+    display: flex;
+    align-items: center;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+  

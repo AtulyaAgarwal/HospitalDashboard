@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+
+/* Ward Title */
+.ward-title {
+    /* Wards */
+    font-family: "Noto Sans", sans-serif;
+    
+    text-align: left !important;
+    width: 65vw;
+    height: 1vw;
+    left: 10vw;
+    top: 10.5vw ;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    align-content: baseline;
+    color: #000000;
+  }
+  
+  /* Filters and Actions Container */
+  .filters-and-actions {
+    font-family: "Noto Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    gap: 16px; /* Spacing between elements */
+    margin: 20px 0;
+    padding: 8px 16px; /* Inner spacing */
+    background-color: #fff; /* White background */
+    border: none; /* No visible border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    border-radius: 8px; /* Optional rounded edges */
+  }
+  
+  /* Filters (Dropdowns Group) */
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between dropdowns */
+  }
+  
+
+  
+  .input-group select:hover,
+  .input-group select:focus {
+    border-color: #6D1DF0; /* Highlight border on hover/focus */
+    box-shadow: 0px 0px 6px rgba(109, 29, 240, 0.3);
+  }
+  
+  /* Add Ward Button */
+  .add-ward-btn {
+    font-family: "Noto Sans", sans-serif;
+    width: auto; /* Adjusts to content size */
+    height: 48px; /* Fixed height */
+    padding: 12px 16px; /* Padding */
+    background-color: #6D1DF0; /* Primary purple background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-ward-btn:hover {
+    background-color: #5611C9; /* Slightly darker purple */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Filter Buttons White Background */
+  .filters-title {
+    width: 47px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+  
+    font-weight: 500; /* Semibold */
+    font-size: 16px;
+    line-height: 22px; /* Aligns to height */
+    letter-spacing: -0.02em;
+    color: #000000; /* Black color */
+    margin-right: 10px; /* Space between the title and dropdowns */
+    display: flex; /* Keeps alignment inline */
+    align-items: center; /* Vertically center the text */
+  }
+  
+  .filter-btn {
+    width: 123px !important;
+    height: 48px;
+    padding: 12px 16px;
+    background-color: #fff; /* White background */
+    border: 1px solid #E0E0E0; /* Subtle border */
+    color: #333; /* Dark text */
+    border-radius: 4px; /* Rounded edges */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-btn:hover {
+    border-color: #6D1DF0; /* Highlight on hover */
+    box-shadow: 0px 0px 6px rgba(109, 29, 240, 0.3);
+  }
+  
+  /* Table Section - Transparent */
+  .react-table {
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 20px;
+    border: 1px solid rgba(224, 224, 224, 0.6);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    width: 100%;
+  }
+  
+  /* Modal - Subtle Background */
+  .modal {
+    font-family: "Noto Sans", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Apply blur to the background */
+    z-index: 999;
+  }
+  
+  .modal-content {
+    font-family: "Noto Sans", sans-serif;
+    position: relative;
+    background: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't exceed modal width */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Input/Select Field Styles */
+  .input-group {
+    position: relative;
+    margin-bottom: 16px;
+  }
+  
+  .input-group label {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #888;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Style for input and select elements */
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  /* Focused state */
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #6D1DF0;
+  }
+  
+  .input-group select {
+    width: 100% !important;
+  }
+  
+  /* When input is filled or focused */
+  .input-group input:focus + label,
+  .input-group select:focus + label,
+  .input-group input:not(:placeholder-shown) + label,
+  .input-group select:not(:placeholder-shown) + label {
+    top: 10px;
+    font-size: 12px;
+    color: #6D1DF0;
+    transform: translateY(0);
+  }
+  
+  /* Hide label when the field is filled or valid */
+  .input-group input:not(:focus):valid + label,
+  .input-group select:not(:focus):valid + label {
+    display: none;
+  }
+  
+  /* Backdrop for modal background */
+  .backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  /* Actions */
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .actions button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .actions button:first-child {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .actions button:last-child {
+    background-color: #6D1DF0;
+    color: white;
+  }
+  
+  /* Ensure Table Fits Webpage */
+  .react-table {
+    font-family: "Noto Sans", sans-serif;
+    margin: 20px auto; /* Center table horizontally */
+    width: calc(100% - 32px); /* Responsive width minus some padding */
+    max-width: 100%;
+    border-collapse: collapse; /* Prevent spacing between table cells */
+    max-width: 98% !important;
+  }
+  
+  .react-table th,
+  .react-table td {
+    text-align: left;
+    padding: 10px; /* Optional: Adds spacing inside cells */
+  }
+
+  .react-table th {
+    text-align: left !important;
+  }
+
+  .react-table th:first-child,
+  .react-table td:first-child {
+    padding-left: 20px !important; /* Adjust this value as needed */
+  }
+  .input-group select {
+    width: 123px;
+    height: 48px;
+    padding: 12px 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+  }
+  
+  .filter-btn {
+    width: 123px;
+    height: 48px;
+    padding: 12px 16px;
+    font-size: 14px;
+    background-color: #fff; /* Match Figma white */
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .add-ward-btn {
+    width: 123px; /* Fixed Figma width */
+    height: 48px;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  /* Adjust Container Alignment to Right */
+  .filters-and-actions {
+    justify-content: flex-end;
+    padding: 8px 16px;
+  }
+  
+  /* Sign-Up Modal */
+.sign-up-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+.sign-up-btn {
+  font-family: "Noto Sans", sans-serif;
+    width: auto; /* Adjusts to content size */
+    height: 48px; /* Fixed height */
+    padding: 12px 16px; /* Padding */
+    background-color: #6D1DF0; /* Primary purple background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-up-btn:hover {
+  background-color: #5611C9; /* Slightly darker purple */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-modal-content {
+  background: white;
+  width: 450px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+.sign-up-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.sign-up-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.sign-up-actions button:first-child {
+  background-color: #ccc;
+  color: black;
+}
+
+.sign-up-actions button:last-child {
+  background-color: #6D1DF0;
+  color: white;
+}
